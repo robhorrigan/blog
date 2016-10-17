@@ -29,8 +29,8 @@ dateFormat = "Jan 2, 2006"
 
 ## Site Meta Settings
 [params.meta]
-description = "Simple minimalist theme"
-keywords = "minimalist,blog,goa,hugo,developer"
+description = "Blog of Rob Horrigan"
+keywords = "blog,programming,developer"
 
 ## Social Accounts
 [params.social]
