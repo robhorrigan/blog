@@ -1,6 +1,6 @@
 ## Basic Configuration
 
-baseurl = "https://robhorrigan.github.io/"
+baseurl = "https://robhorrigan.github.io/blog"
 builddrafts = false
 canonifyurls = false
 languageCode = "en-US"
