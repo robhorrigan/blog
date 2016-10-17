@@ -22,6 +22,7 @@ build:
   steps:
     - arjen/hugo-build@1.13.1:
         version: "0.16"
+        theme: hugo-goa
 deploy:
   steps:
     - install-packages:
