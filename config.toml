@@ -1,0 +1,58 @@
+## Basic Configuration
+
+baseurl = "https://robhorrigan.github.io/"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Rob Horrigan"
+title = "Rob Horrigan"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Rob Horrigan"
+intro = "Software Developer"
+description = "Now @ABC. Previously @XYZ, and @123. <br/> \"What is this?\""
+authorImage = "profile.jpeg"
+dateFormat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer"
+
+## Social Accounts
+[params.social]
+github = "robhorrigan"
+linkedIn = "roberthorrigan"
+twitter = "rob_horrigan"
+email = "roberthorrigan@gmail.com"
+
+## Extras
+[params.extra]
+copyright = "© 2016. Rob Horrigan. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredBy = true
+hightlightJS = true
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 200
+    url = "/about/"
