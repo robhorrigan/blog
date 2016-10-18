@@ -1,4 +1,4 @@
-baseurl = "http://robhorrigan.github.io/blog/"
+baseurl = "https://robhorrigan.github.io/blog/"
 title = "Blog of Rob Horrigan"
 theme = "ghostwriter"
 languageCode = "en-us"
