@@ -1,13 +1,13 @@
-baseurl = "http://robhorrigan.github.io/blog/"
-title = "Blog of Rob Horrigan"
+baseurl = "http://replace-this-with-your-domain.com/"
+title = "Ghostwriter example"
 theme = "ghostwriter"
 languageCode = "en-us"
-copyright = "Rob Horrigan"
-googleAnalytics = "XXX"
+copyright = "My Name"
 disqusShortname = "XXX"
+googleAnalytics = "XXX"
 
 [Author]
-    name = "Rob Horrigan"
+    name = "My Name"
     profile = "https://google.com/+XXX"
 
 [Taxonomies]
@@ -15,8 +15,8 @@ disqusShortname = "XXX"
 
 [Params]
     intro = true
-    headline = "My headline"
-    description = "My description"
+    headline = "Ghostwriter example"
+    description = "Ghostwriter example description"
     github = "https://github.com/XXX"
     gitlab = "https://gitlab.com/XXX"
     linkedin = "https://linkedin.com/in/XXX/"

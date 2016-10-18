@@ -1,13 +1,32 @@
-baseurl = "http://robhorrigan.github.io/blog/"
-title = "Blog of Rob Horrigan"
+# Ghostwriter
+
+Enhanced port of the Ghost "[ghostwriter](https://github.com/roryg/ghostwriter)" theme to the [Hugo](http://gohugo.io) site generator.
+
+## Installation
+
+Inside the folder of your Hugo site run:
+
+    $ mkdir themes
+    $ cd themes
+    $ git clone https://github.com/jbub/ghostwriter
+
+For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+
+## Example config.toml
+
+To customize your theme you can use following params:
+
+```toml
+baseurl = "http://example.com/"
+title = "mytitle"
 theme = "ghostwriter"
 languageCode = "en-us"
-copyright = "Rob Horrigan"
+copyright = "My Name"
 googleAnalytics = "XXX"
 disqusShortname = "XXX"
 
 [Author]
-    name = "Rob Horrigan"
+    name = "My Name"
     profile = "https://google.com/+XXX"
 
 [Taxonomies]
@@ -47,3 +66,4 @@ disqusShortname = "XXX"
     name = "About"
     url = "/page/about/"
     weight = 4
+```
