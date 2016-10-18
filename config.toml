@@ -17,11 +17,9 @@ disqusShortname = "XXX"
     intro = true
     headline = "My headline"
     description = "My description"
-    github = "https://github.com/XXX"
-    gitlab = "https://gitlab.com/XXX"
-    linkedin = "https://linkedin.com/in/XXX/"
-    gplus = "https://google.com/+XXX"
-    twitter = "https://twitter.com/XXX"
+    github = "https://github.com/robhorrigan"
+    linkedin = "https://linkedin.com/in/roberthorrigan/"
+    twitter = "https://twitter.com/rob_horrigan"
     stackoverflow = "http://stackoverflow.com/users/XXX/YYY"
     opengraph = true
 
@@ -39,11 +37,6 @@ disqusShortname = "XXX"
     weight = 2
 
 [[menu.main]]
-    name = "Contact"
-    url = "/page/contact/"
-    weight = 3
-
-[[menu.main]]
     name = "About"
     url = "/page/about/"
-    weight = 4
+    weight = 3
