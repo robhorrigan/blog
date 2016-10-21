@@ -8,15 +8,15 @@ disqusShortname = "XXX"
 
 [Author]
     name = "Rob Horrigan"
-    profile = "https://google.com/+XXX"
+    profile = "https://robhorrigan.github.io/blog"
 
 [Taxonomies]
     tag = "tags"
 
 [Params]
     intro = true
-    headline = "My headline"
-    description = "My description"
+    headline = "Welcome"
+    description = "More to come shortly..."
     github = "https://github.com/robhorrigan"
     linkedin = "https://linkedin.com/in/roberthorrigan/"
     twitter = "https://twitter.com/rob_horrigan"
