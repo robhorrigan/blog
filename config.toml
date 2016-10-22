@@ -3,7 +3,7 @@ title = "Blog of Rob Horrigan"
 theme = "ghostwriter"
 languageCode = "en-us"
 copyright = "Rob Horrigan"
-googleAnalytics = "XXX"
+googleAnalytics = "UA-86155829-1"
 disqusShortname = "XXX"
 
 [Author]
