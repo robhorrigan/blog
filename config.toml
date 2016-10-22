@@ -4,7 +4,7 @@ theme = "ghostwriter"
 languageCode = "en-us"
 copyright = "Rob Horrigan"
 googleAnalytics = "UA-86155829-1"
-disqusShortname = "XXX"
+disqusShortname = "robhorrigan-github-io"
 
 [Author]
     name = "Rob Horrigan"
