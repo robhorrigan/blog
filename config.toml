@@ -38,5 +38,5 @@ disqusShortname = "robhorrigan-github-io"
 
 [[menu.main]]
     name = "About"
-    url = "/page/about/"
+    url = "https://robhorrigan.github.io"
     weight = 3
