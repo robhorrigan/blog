@@ -32,11 +32,6 @@ disqusShortname = "robhorrigan-github-io"
     weight = 1
 
 [[menu.main]]
-    name = "Projects"
-    url = "/project/"
-    weight = 2
-
-[[menu.main]]
     name = "About"
     url = "https://robhorrigan.github.io"
-    weight = 3
+    weight = 2

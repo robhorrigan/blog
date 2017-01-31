@@ -1,7 +1,6 @@
 
-## Blog of Rob Horrigan
+### Blog of Rob Horrigan
 A hugo blog site hosted on Github pages with updates deployed via Wercker CI.
-
 
 #### Build
 ```
