@@ -16,7 +16,7 @@ disqusShortname = "robhorrigan-github-io"
 [Params]
     intro = true
     headline = "Welcome"
-    description = "More to come shortly..."
+    description = ">blog: /bläg/ (noun) a website on which one puts new information regularly<"
     github = "https://github.com/robhorrigan"
     linkedin = "https://linkedin.com/in/roberthorrigan/"
     twitter = "https://twitter.com/rob_horrigan"
