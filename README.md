@@ -24,5 +24,5 @@ hugo new page/about.md
 
 #### Create a new project
 ```
-hugo new project/about.md
+hugo new project/todo.md
 ```
