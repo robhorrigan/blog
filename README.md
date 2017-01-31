@@ -26,3 +26,17 @@ hugo new page/about.md
 ```
 hugo new project/todo.md
 ```
+
+#### Code Snippets with [Google Code-prettify](https://github.com/google/code-prettify)
+To embed a code snippet, just wrap code in a `<pre>` tag with `class="prettyprint"`
+```
+<pre class="prettyprint">
+module.exports = function () {
+  var element = document.createElement('h1');
+
+  element.innerHTML = 'Hello world!';
+
+  return element;
+};
+</pre>
+```
