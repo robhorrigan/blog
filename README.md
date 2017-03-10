@@ -2,6 +2,11 @@
 ### Blog of Rob Horrigan
 A hugo blog site hosted on Github pages. Updates deployed via Wercker CI.
 
+#### Install Hugo
+```
+brew update && brew install hugo
+```
+
 #### Build
 ```
 hugo
@@ -28,9 +33,9 @@ hugo new project/todo.md
 ```
 
 #### Code Snippets with [Google Code-prettify](https://github.com/google/code-prettify)
-To embed a code snippet, just wrap code in a `<pre>` tag with `class="prettyprint"`
+To embed a code snippet, just wrap code in a `<pre>` tag with `class="prettyprint linenums"`
 ```
-<pre class="prettyprint">
+<pre class="prettyprint linenums">
 module.exports = function () {
   var element = document.createElement('h1');
 
