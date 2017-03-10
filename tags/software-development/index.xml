@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Development on Blog of Rob Horrigan</title>
+    <link>https://robhorrigan.github.io/blog/tags/software-development/</link>
+    <description>Recent content in Software Development on Blog of Rob Horrigan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Rob Horrigan</copyright>
+    <lastBuildDate>Fri, 17 Feb 2017 22:16:36 -0600</lastBuildDate>
+    <atom:link href="https://robhorrigan.github.io/blog/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>hello, world</title>
+      <link>https://robhorrigan.github.io/blog/2017/02/17/hello-world/</link>
+      <pubDate>Fri, 17 Feb 2017 22:16:36 -0600</pubDate>
+      
+      <guid>https://robhorrigan.github.io/blog/2017/02/17/hello-world/</guid>
+      <description>&lt;p&gt;Hello and welcome to my blog. It&amp;rsquo;s not much to look at yet, but hopefully over time I will post some interesting and informative posts concerning &lt;a href=&#34;https://robhorrigan.github.io/blog/tags/programming/&#34;&gt;&lt;strong&gt;programming&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://robhorrigan.github.io/blog/tags/technology/&#34;&gt;&lt;strong&gt;technology&lt;/strong&gt;&lt;/a&gt;, and &lt;a href=&#34;https://robhorrigan.github.io/blog/tags/software-development/&#34;&gt;&lt;strong&gt;software development&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, enjoy the lovely &lt;em&gt;&lt;strong&gt;Ghostwriter&lt;/strong&gt;&lt;/em&gt; theme courtesy of &lt;a href=&#34;https;//www.jollygoodthemes.com&#34;&gt;JollyGoodThemes&lt;/a&gt; and feel free to leave a comment below about what you would like to see here in the future.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

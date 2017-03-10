@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Blog of Rob Horrigan</title>
+    <link>https://robhorrigan.github.io/blog/tags/aws/</link>
+    <description>Recent content in Aws on Blog of Rob Horrigan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Rob Horrigan</copyright>
+    <lastBuildDate>Fri, 10 Mar 2017 11:13:56 -0600</lastBuildDate>
+    <atom:link href="https://robhorrigan.github.io/blog/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Using Webtask.io to send data to AWS S3</title>
+      <link>https://robhorrigan.github.io/blog/2017/03/10/s3-webtask/</link>
+      <pubDate>Fri, 10 Mar 2017 11:13:56 -0600</pubDate>
+      
+      <guid>https://robhorrigan.github.io/blog/2017/03/10/s3-webtask/</guid>
+      <description>&lt;p&gt;Recently I needed to find a simple solution for storing a JSON response in an S3 bucket for future inspection. I won&amp;rsquo;t bore you with the details of the specific use-case, but in the process I learned about how &lt;a href=&#34;https://webtask.io/&#34;&gt;Webtask.io&lt;/a&gt; can make something like this trivially easy to implement.&lt;/p&gt;
+
+&lt;p&gt;The Webtask I created accepts JSON and sends it to be stored in an AWS S3 bucket using Express and the AWS SDK. This is a simplified version of the solution I used for my real world implementation, since I needed to do some filtering of the data to determine which requests should be stored, but hopefully this shows how one goes about setting something like this up.&lt;/p&gt;
+
+&lt;pre class=&#34;prettyprint linenums&#34;&gt;
+// s3-upload.js
+
+&#39;use latest&#39;
+
+import AWS from &#39;aws-sdk&#39;
+import express from &#39;express&#39;
+import Webtask from &#39;webtask-tools&#39;
+import bodyParser from &#39;body-parser&#39;
+import uuid from &#39;uuid&#39;
+
+var app = express();
+
+app.use(bodyParser.json());
+
+app.post(&#39;/&#39;, function (req, res) {
+  const { AWS_REGION, AWS_PUBLIC_KEY, AWS_SECRET_KEY, AWS_BUCKET } = req.webtaskContext.data;
+  const s3 = new AWS.S3({
+    region: AWS_REGION,
+    accessKeyId: AWS_PUBLIC_KEY,
+    secretAccessKey: AWS_SECRET_KEY
+  })
+  const maxAge = 60 * 60 * 24 * 365
+  const cacheControl = `public, max-age=${maxAge}`
+  const bucket = AWS_BUCKET
+  const awsConfig = {
+    Bucket: bucket,
+    ACL: &#39;public-read&#39;,
+    CacheControl: cacheControl
+  }
+  const key = uuid.v4().substring(0, 6)
+  const body = JSON.stringify(req.body)
+
+  s3.putObject({
+    ...awsConfig,
+    Key: key,
+    Body: body
+  }, (err, data) =&gt; {
+    if (err) throw err;
+    res.send(`http://${bucket}/${key}`);
+  })
+});
+
+module.exports = Webtask.fromExpress(app);
+&lt;/pre&gt;
+
+&lt;p&gt;Then, once you have the &lt;a href=&#34;https://webtask.io/docs/wt-cli&#34;&gt;Webtask CLI&lt;/a&gt; installed, you can run &lt;code&gt;wt create s3-upload.js --no-parse --secret AWS_REGION= --secret AWS_PUBLIC_KEY= --secret AWS_SECRET_KEY= --secret AWS_BUCKET=&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Enjoy.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
