@@ -16,7 +16,13 @@
         <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <style>
+          li.L0, li.L1, li.L2, li.L3,
+          li.L5, li.L6, li.L7, li.L8 {
+            list-style-type: decimal !important;
+          }
+        </style>
     </head>
     <body>
         {{ template "_internal/google_analytics.html" . }}
